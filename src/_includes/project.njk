@@ -4,6 +4,11 @@ mainId: portfolio
 ---
 <div class="project">
   <h2 class="page-header">{{ title }}</h2>
+  {% if immagine %}
+  <div class="project-detail-cover">
+    <img src="{{ immagine }}" alt="Image of {{ title }}"/>
+  </div>
+  {% endif %}
   <div class="project-details">
     {% if anno %}
     <p class="project-date-range">{{ anno }}</p>

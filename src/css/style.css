@@ -213,6 +213,14 @@ h2.page-header a:hover {
   font-size: 0.9rem;
   color: var(--text-1);
 }
+.project-detail-cover {
+  margin: 1rem 0;
+}
+.project-detail-cover img {
+  max-height: 250px;
+  border-radius: 3px;
+}
+
 .project-date-range {
   font-size: 1rem;
   color: var(--text-2);
@@ -275,6 +283,29 @@ dl.links div:first-child {
   .index-item-header div.full-width {
     flex-basis: 100%;
   }
+}
+
+dialog.lightbox {
+  border: none;
+  background: transparent;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+dialog.lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+dialog.lightbox:focus {
+  outline: none;
+}
+dialog.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+}
+
+.zoomable {
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
